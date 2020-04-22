@@ -7,5 +7,16 @@
 
 ### Java基础笔记
 
-### JVM相关
-  * [深入理解JVM](https://github.com/pangh-space/Java-Internal-Work/blob/master/jvm%E7%9B%B8%E5%85%B3/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JVM.md)
+#### JVM相关
+
+  * [深入理解JVM]([https://github.com/pangh-space/Java-Internal-Work/blob/master/docs/jvm%E7%9B%B8%E5%85%B3/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JVM.md](https://github.com/pangh-space/Java-Internal-Work/blob/master/docs/jvm相关/深入理解JVM.md))
+
+
+
+#### 数据结构与算法
+
+* 稀疏数组与队列
+* 链表
+* 栈
+* 递归
+* 排序算法
