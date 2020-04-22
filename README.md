@@ -9,7 +9,7 @@
 
 #### JVM相关
 
-  * [深入理解JVM]([https://github.com/pangh-space/Java-Internal-Work/blob/master/docs/jvm%E7%9B%B8%E5%85%B3/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JVM.md](https://github.com/pangh-space/Java-Internal-Work/blob/master/docs/jvm相关/深入理解JVM.md))
+  * [深入理解JVM]([https://github.com/pangh-space/Java-Internal-Work/blob/master/docs/jvm%E7%9B%B8%E5%85%B3/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JVM.md](https://github.com/pangh-space/Java-Internal-Work/blob/master/docs/jvm相关/深入理解JVM.md)
 
 
 
