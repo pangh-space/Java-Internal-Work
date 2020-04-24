@@ -121,7 +121,9 @@ HTTPS 协议的主要功能基本都依赖于 TLS/SSL 协议，TLS/SSL 的功能
 ### 3.解决通信方身份可能被伪装的问题——数字证书
 
 数字证书认证机构处于客户端与服务器双方都可信赖的第三方机构的立场上。
+
 [![img](https://java-internal-work.oss-cn-beijing.aliyuncs.com/%E7%BD%91%E7%BB%9C/HTTPS/8.png)](https://java-internal-work.oss-cn-beijing.aliyuncs.com/%E7%BD%91%E7%BB%9C/HTTPS/8.png)
+
 我们来介绍一下数字证书认证机构的业务流程：
 
 - 服务器的运营人员向第三方机构CA提交公钥、组织信息、个人信息(域名)等信息并申请认证;
