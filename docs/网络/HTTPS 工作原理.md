@@ -103,6 +103,7 @@ HTTPS 协议的主要功能基本都依赖于 TLS/SSL 协议，TLS/SSL 的功能
 - 数字签名能确定消息的完整性,证明数据是否未被篡改过。
 
 **数字签名如何生成:**
+
 [![img](https://java-internal-work.oss-cn-beijing.aliyuncs.com/%E7%BD%91%E7%BB%9C/HTTPS/6.png)](https://java-internal-work.oss-cn-beijing.aliyuncs.com/%E7%BD%91%E7%BB%9C/HTTPS/6.png)
 
 将一段文本先用Hash函数生成消息摘要，然后用发送者的私钥加密生成数字签名，与原文文一起传送给接收者。接下来就是接收者校验数字签名的流程了。
