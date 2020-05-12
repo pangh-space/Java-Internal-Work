@@ -13,6 +13,7 @@
 #### JVM相关
 
   * [深入理解JVM](https://github.com/pangh-space/Java-Internal-Work/blob/master/docs/jvm%E7%9B%B8%E5%85%B3/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3JVM.md)
+  * [线上服务的GC问题排查，带实际案例](https://mp.weixin.qq.com/s/Hs2bo37x7mcx7XTdNQVgZQ)
 
 #### 数据结构与算法
 
