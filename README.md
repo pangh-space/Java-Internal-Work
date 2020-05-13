@@ -12,7 +12,7 @@
 
 #### Java多线程
 
-- [【深入AQS原理】我画了35张图就是为了让你深入 AQS](https://www.cnblogs.com/wang-meng/p/12816829.html)
+- [深入AQS原理-我画了35张图就是为了让你深入 AQS](https://www.cnblogs.com/wang-meng/p/12816829.html)
 
 #### JVM相关
 
