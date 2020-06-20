@@ -127,3 +127,6 @@
 
 1. 升级版本的时候，一定要先把Docker 正在运行的容器停止，然后删除Docker 容器。之后再删除Docker容器对应的镜像文件。最后在Docker build 打包镜像文件，在用docker run 启动镜像文件。
 
+####  测试项目地址
+
+GitHub 地址：https://github.com/pangh-space/spring-boot-docker.git
