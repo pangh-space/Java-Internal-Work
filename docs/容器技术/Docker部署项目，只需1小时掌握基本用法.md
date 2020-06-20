@@ -120,6 +120,8 @@
 - docker logs 容器ID  - 可以查看容器运行日志
 - docker save   - 导出镜像文件
 - docker load  - 导入镜像文件
+- docker exec -it 容器ID sh   -  进入容器命令
+- docker network list  -  查看docker创建的网络列表
 
 ####  Docker注意事项
 
