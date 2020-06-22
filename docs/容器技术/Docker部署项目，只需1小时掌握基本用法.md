@@ -110,18 +110,22 @@
 
 ####  Docker常用命令
 
-- docker build  - 打包可执行文件为Docker 镜像
-- docker images  - 查看当前Docker 中的所有镜像文件
-- docker rmi 镜像文件ID  - 删除镜像文件
-- docker run  -  启动镜像文件为运行容器
-- docker ps  - 查看当前正在运行的容器
-- docker ps -a  - 查看正在运行的和已经停止的容器
-- docker start/stop/restart  - 启动/停止/重启容器
-- docker logs 容器ID  - 可以查看容器运行日志
-- docker save   - 导出镜像文件
-- docker load  - 导入镜像文件
-- docker exec -it 容器ID sh   -  进入容器命令
-- docker network list  -  查看docker创建的网络列表
+- docker build  -> 打包可执行文件为Docker 镜像
+- docker images  -> 查看当前Docker 中的所有镜像文件
+- docker rmi 镜像文件ID  -> 删除镜像文件
+- docker run  ->  启动镜像文件为运行容器
+- docker ps  -> 查看当前正在运行的容器
+- docker ps -a  -> 查看正在运行的和已经停止的容器
+- docker start/stop/restart  -> 启动/停止/重启容器
+- docker logs 容器ID  -> 可以查看容器运行日志
+- docker save   -> 导出镜像文件
+- docker load  -> 导入镜像文件
+- docker exec -it 容器ID sh   ->  进入容器命令
+- docker network list  ->  查看docker创建的网络列表
+- docker rmi `docker images -q`   ->    删除本地所有镜像
+- docker cp /opt/test/file.txt mycontainer:/opt/testnew/   -> 拷贝宿主机文件到docker容器，mycontainer 为容器名称或者容器ID
+- docker cp mycontainer:/opt/testnew/file.txt /opt/test/   -> 拷贝docker 容器中的文件到宿主机
+- docker inspect --format='{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -aq)    ->  查看服务占用的IP，在启动命令run 中指定的ip
 
 ####  Docker注意事项
 
