@@ -126,6 +126,8 @@
 - docker cp /opt/test/file.txt mycontainer:/opt/testnew/   -> 拷贝宿主机文件到docker容器，mycontainer 为容器名称或者容器ID
 - docker cp mycontainer:/opt/testnew/file.txt /opt/test/   -> 拷贝docker 容器中的文件到宿主机
 - docker inspect --format='{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -aq)    ->  查看服务占用的IP，在启动命令run 中指定的ip
+- docker images -f "dangling=true"  -> 查看标签为空的镜像
+- docker rmi $(docker images -f "dangling=true" -q)  -> 删除标签为空的镜像
 
 ####  Docker注意事项
 
