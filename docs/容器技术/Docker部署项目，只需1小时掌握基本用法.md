@@ -128,6 +128,7 @@
 - docker inspect --format='{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -aq)    ->  查看服务占用的IP，在启动命令run 中指定的ip
 - docker images -f "dangling=true"  -> 查看标签为空的镜像
 - docker rmi $(docker images -f "dangling=true" -q)  -> 删除标签为空的镜像
+- docker ps | grep wise-kps | awk '{print $1"*.log"}'|xargs -i find /opt/docker -name {} | xargs -i sh  -c "> {}"  -> wise-kps 更换容器名称即可
 
 ####  Docker注意事项
 
