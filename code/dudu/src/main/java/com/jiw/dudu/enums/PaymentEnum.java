@@ -1,4 +1,4 @@
-package com.zzyy.study.enums;
+package com.jiw.dudu.enums;
 
 import lombok.Getter;
 
@@ -30,15 +30,6 @@ public enum PaymentEnum
     //枚举的遍历和查找
     public static PaymentEnum getPaymentEnum(String code){
         return Arrays.stream(PaymentEnum.values()).filter(x -> x.code.equalsIgnoreCase(code)).findFirst().orElse(null);
-    }
-
-    public static PaymentEnum getPaymentEnum2(String code){
-        for (PaymentEnum element : PaymentEnum.values()) {
-            if(code.equalsIgnoreCase(element.code)){
-                return element;
-            }
-        }
-        return null;
     }
 
 
