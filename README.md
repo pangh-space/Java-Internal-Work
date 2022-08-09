@@ -33,6 +33,6 @@
 
 ####  Java 项目常用工具类
 
-- [将大图片缩小，符合业务要求](https://github.com/pangh-space/Java-Internal-Work/blob/master/code/src/main/java/com/jiw/ph/images/BigBase64Image2Small.java)
-- [通过HTTPClient Get请求，实现接收服务端返回文件流](https://github.com/pangh-space/Java-Internal-Work/blob/master/code/src/main/java/com/jiw/ph/http/HttpClientGetStream.java)
+- [将大图片缩小，符合业务要求](https://github.com/pangh-space/Java-Internal-Work/blob/master/code/dudu/src/main/java/com/jiw/dudu/util/BigBase64Image2Small.java)
+- [通过HTTPClient Get请求，实现接收服务端返回文件流](https://github.com/pangh-space/Java-Internal-Work/blob/master/code/dudu/src/main/java/com/jiw/dudu/util/HttpClientGetStream.java)
 
