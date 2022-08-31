@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Version v1.0.0
  */
 
-@Api(description = "客户Pay接口")
+@Api(tags = "客户Pay接口")
 @RestController
 @Slf4j
 public class PayController {

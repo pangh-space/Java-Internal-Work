@@ -5,8 +5,7 @@ import lombok.Getter;
 import java.util.Arrays;
 
 /**
- * @auther zzyy
- * @create 2022-08-04 17:53
+ *
  */
 public enum PaymentEnum
 {

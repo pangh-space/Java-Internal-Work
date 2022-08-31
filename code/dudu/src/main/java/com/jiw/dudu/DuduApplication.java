@@ -2,7 +2,7 @@ package com.jiw.dudu;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import tk.mybatis.spring.annotation.MapperScan;
 
 /**
  * @Description DuduApplication
@@ -11,6 +11,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
  * @Version v1.0.0
  */
 @SpringBootApplication
+@MapperScan("com.jiw.dudu.mapper")
 public class DuduApplication {
 
     public static void main(String[] args) {
