@@ -28,6 +28,12 @@ public class EchoServerHandler extends ChannelInboundHandlerAdapter {
     }
 
     @Override
+    public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
+        super.channelReadComplete(ctx);
+        log.info("服务器接收信息完成...");
+    }
+
+    @Override
     public void exceptionCaught(ChannelHandlerContext channelHandlerContext, Throwable throwable) throws Exception {
         throwable.printStackTrace();
         channelHandlerContext.close();
