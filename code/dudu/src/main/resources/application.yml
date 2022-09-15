@@ -11,12 +11,34 @@ spring:
     password: mysql
     druid:
       test-while-idle: false
+  # Redis单机
   redis:
     host: 127.0.0.1
     port: 6379
     password: 123456
     timeout: 3000
     database: 0
+  # RedisCluster集群配置方式
+#  redis:
+#    cluster:
+#      max-redirects: 3
+#      nodes:
+#        - 10.150.3.208:7001
+#        - 10.150.3.208:7002
+#        - 10.150.3.208:7003
+#        - 10.150.3.208:7004
+#        - 10.150.3.208:7005
+#        - 10.150.3.208:7006
+#      refresh-time: 5
+#    jedis:
+#      pool:
+#        max-active: 8
+#        max-idle: 8
+#        max-wait: -1ms
+#        min-idle: 0
+#    timeout: 3s
+#    password: Wise@2022
+#    database: 0
   redisson:
     config: |
       singleServerConfig:
