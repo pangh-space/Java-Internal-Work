@@ -1,0 +1,82 @@
+spring:
+  # Redis单机
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
+    timeout: 3000
+    database: 0
+  # RedisCluster集群配置方式
+  #  redis:
+  #    cluster:
+  #      # 集群中重定向最大次数
+  #      max-redirects: 3
+  #      nodes:
+  #        - 172.16.43.87:7001
+  #        - 172.16.43.87:7002
+  #        - 172.16.43.87:7003
+  #        - 172.16.43.87:7004
+  #        - 172.16.43.87:7005
+  #        - 172.16.43.87:7006
+  #      refresh-time: 5
+  #    lettuce:
+  #      # 连接池配置
+  #      pool:
+  #        # 连接池最大连接数（使用负数表示没有限制），默认8
+  #        max-active: 8
+  #        # 连接池中的最大空闲连接 默认 8
+  #        max-idle: 8
+  #        # 连接池最大阻塞等待时间（使用负值表示没有限制） 默认 -1
+  #        max-wait: -1ms
+  #        # 连接池中的最小空闲连接 默认 0
+  #        min-idle: 0
+  #      cluster:
+  #        refresh:
+  #          #自动刷新集群 默认false关闭
+  #          adaptive: true
+  #    timeout: 3s
+  #    password: Wise@2022
+  #    database: 0
+  redisson:
+    config: |
+      singleServerConfig:
+        #  连接空闲超时，单位：毫秒
+        idleConnectionTimeout: 100000
+        #  连接超时，单位：毫秒
+        connectTimeout: 10000
+        #  命令等待超时，单位：毫秒
+        timeout: 3000
+        #  命令失败重试次数
+        retryAttempts: 3
+        #  命令重试发送时间间隔，单位：毫秒
+        retryInterval: 1500
+        #  密码
+        password: 123456
+        #  单个连接最大订阅数量
+        subscriptionsPerConnection: 5
+        #  客户端名称
+        clientName: null
+        #  节点地址
+        address: "redis://127.0.0.1:6379"
+        #  发布和订阅连接的最小空闲连接数
+        subscriptionConnectionMinimumIdleSize: 1
+        #  发布和订阅连接池大小
+        subscriptionConnectionPoolSize: 50
+        #  最小空闲连接数
+        connectionMinimumIdleSize: 32
+        #  连接池大小
+        connectionPoolSize: 64
+        #  redis数据库编号
+        database: 0
+        #  DNS监测时间间隔，单位：毫秒
+        dnsMonitoringInterval: 5000
+      #  线程池数量
+      threads: 0
+      #  Netty线程池数量
+      nettyThreads: 0
+      #  编码
+      codec: !<org.redisson.codec.JsonJacksonCodec> {}
+      #  传输模式
+      "transportMode":"NIO"
+      #  配置看门狗的默认超时时间为30s，这里改为10s
+      lockWatchdogTimeout: 10000
