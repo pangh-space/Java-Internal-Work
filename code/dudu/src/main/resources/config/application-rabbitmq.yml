@@ -1,0 +1,27 @@
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    template:
+      # 必须设置 true 消息由交换机到队列失败后才会回调接口，而不是将消息丢弃
+      mandatory: true
+    # 路由失败回调（returnCallback）
+    publisher-returns: true
+    listener:
+      simple:
+        # 消息确认机制：自动(auto)、手动(manual)（自动，无需消费端编码手动确认；如果手动，需要消费端自己编码确认消费；）
+        acknowledge-mode: manual
+        # 每次从一次性broker里边取的待消费的消息个数
+        prefetch: 2
+        # 每个listener在初始化的时候设置的并发消费者的个数
+        concurrency: 1
+        # 以下配置只针对自动签收生效，acknowledge-mode:auto
+        retry:
+          enabled: true
+          # 客户端发生异常，服务端重试次数后，放入死信队列
+          max-attempts: 3
+          initial-interval: 2000
+    # 发布确认模式（confirmCallback）：correlated(发布消息成功到交换机后触发)
+    publisher-confirm-type: correlated
