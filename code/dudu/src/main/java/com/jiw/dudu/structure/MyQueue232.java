@@ -12,12 +12,12 @@ import java.util.Stack;
  * 解题思路：
  *
  */
-public class MyQueue {
+public class MyQueue232 {
 
     private static Stack<Integer> inStack;
     private static Stack<Integer> outStack;
 
-    public MyQueue() {
+    public MyQueue232() {
         inStack = new Stack<>();
         outStack = new Stack<>();
     }
