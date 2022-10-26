@@ -59,7 +59,7 @@ public class MqController {
         ReturnedMessage returnedMessage = new ReturnedMessage(new Message(message1.getBytes()),0,null,null,null);
         correlationData.setReturned(returnedMessage);
         rabbitTemplate.convertAndSend(RabbitMQ.ORG_USER_EXCHANGE, RabbitMQ.ORG_ROUTING_KEY, message1,correlationData);
-        // 将routingKey配置错误，验证消息写入队列失败
+        // 将routingKey配置错误，验证消息写入队列失败。验证消息投递错误，进入到备份队列
         String message2 = "组织架构变动2";
         CorrelationData correlationData1 = new CorrelationData();
         ReturnedMessage returnedMessage1 = new ReturnedMessage(new Message(message2.getBytes()),0,null,null,null);
