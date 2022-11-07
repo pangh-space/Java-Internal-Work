@@ -12,10 +12,26 @@ package com.jiw.dudu.structure;
  * 2. 使用i 来遍历所有数组元素，使用currentPoint来标识当前数据已经移动到那个位置
  * 3. 遍历结束后，再重新从currentPoint 的位置遍历剩余下标，置零操作
  */
-public class MoveZeros {
+public class MoveZeros283 {
 
     public void moveZeroes(int[] nums) {
 
+        if (nums  == null) {
+            return;
+        }
+        // 方法1
+        int fast = 0,slow = 0;
+        while (fast < nums.length){
+            if(nums[fast] != 0){
+                int temp = nums[fast];
+                nums[fast] = nums[slow];
+                nums[slow] = temp;
+                slow++;
+            }
+            fast++;
+        }
+
+        // 方法2
         int currentPoint = 0;
         for(int i=0;i<nums.length;i++){
             if(nums[i] != 0){
