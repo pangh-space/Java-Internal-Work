@@ -50,8 +50,11 @@ public class ProductController {
                 log.info("扣减失败，库存不足");
             }
         } finally {
-            //解锁
-            redissonLock.unlock();
+            //解锁（新增判断代码，解决高并发下的BUG）
+            if(redissonLock.isLocked() && redissonLock.isHeldByCurrentThread()){
+                redissonLock.unlock();
+            }
+
         }
         return "end";
     }
