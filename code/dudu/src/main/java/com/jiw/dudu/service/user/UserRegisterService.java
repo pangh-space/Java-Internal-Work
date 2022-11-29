@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 /**
  * @Description 用户注册服务
  * 1. 用于验证用户注册成功后，发送邮件给用户
+ * 2. 参考博客：https://blog.csdn.net/flymoringbird/article/details/120481883
  * @Author pangh
  * @Date 2022年11月29日
  * @Version v1.0.0
