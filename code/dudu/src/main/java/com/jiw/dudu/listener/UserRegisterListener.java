@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
 public class UserRegisterListener {
 
     /**
-     * 发送邮件，可以使用Order注解来指定排序
+     * 发送邮件，可以使用Or  der注解来指定排序
      *
      * @param event
      */
